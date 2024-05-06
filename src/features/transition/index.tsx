@@ -9,7 +9,7 @@ export const Transition = () => {
       () =>
         new Promise((resolve) => {
           setInterval(resolve, 1000);
-        })
+        }),
     );
   }, []);
 
