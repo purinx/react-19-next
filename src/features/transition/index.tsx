@@ -1,5 +1,7 @@
+"use client";
+
+import { Box, Button, Heading, Spinner } from "@radix-ui/themes";
 import { useCallback, useTransition } from "react";
-import { useLoading } from "./useLoading";
 
 export const Transition = () => {
   const [isLoading, startLoading] = useTransition();
@@ -13,5 +15,12 @@ export const Transition = () => {
     );
   }, []);
 
-  return <div></div>;
+  return (
+    <Box m="2">
+      <Heading mb="2" as="h2">
+        useTransition
+      </Heading>
+      {isLoading ? <Spinner /> : <Button onClick={load}>Load</Button>}
+    </Box>
+  );
 };

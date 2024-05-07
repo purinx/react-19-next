@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/themes": "^3.0.3",
     "next": "14.2.3",
     "react": "^19.0.0-beta-b498834eab-20240506",
     "react-dom": "^19.0.0-beta-b498834eab-20240506"
