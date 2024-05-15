@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Theme>
-          <Box width="500px" mx="auto">
+          <Box width="800px" mx="auto">
             {children}
           </Box>
         </Theme>

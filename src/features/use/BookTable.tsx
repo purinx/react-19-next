@@ -1,4 +1,5 @@
 import { use } from "react";
+import { DataList } from "@radix-ui/themes";
 
 type Book = {
   id: string;
@@ -14,13 +15,13 @@ export const BookTable = ({ bookPromise }: Props) => {
   const books = use(bookPromise);
 
   return (
-    <div>
+    <DataList.Root>
       {books.map((book) => (
-        <div key={book.id}>
-          <div>{book.name}</div>
-          <div>{book.description}</div>
-        </div>
+        <DataList.Item key={book.id}>
+          <DataList.Label>{book.name}</DataList.Label>
+          <DataList.Value>{book.description}</DataList.Value>
+        </DataList.Item>
       ))}
-    </div>
+    </DataList.Root>
   );
 };

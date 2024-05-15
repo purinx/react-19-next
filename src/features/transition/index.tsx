@@ -16,7 +16,7 @@ export const Transition = () => {
   }, []);
 
   return (
-    <Box m="2">
+    <Box my="2">
       <Heading mb="2" as="h2">
         useTransition
       </Heading>
